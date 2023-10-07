@@ -1,4 +1,19 @@
 * {
-    background: #0f0f0f;
+    background: #0e0e10;
     color: #efeff1;
+    text-align: center;
 }
+
+main>section>header>ul>li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 30px;
+}
+
+main>section>img {
+    background: #18181b;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 1px #000000;
+}
+
+/* delete */
