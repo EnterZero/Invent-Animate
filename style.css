@@ -4,12 +4,14 @@
     text-align: center;
 }
 
+/* menu */
 main>section>header>ul>li {
     list-style-type: none;
     display: inline-block;
     margin: 30px;
 }
 
+/* home - img */
 main>section>img {
     background: #18181b;
     border-radius: 25px;
