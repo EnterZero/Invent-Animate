@@ -7,3 +7,10 @@
     margin: 0;
     padding: 0;
 }
+
+header {
+    width: 100vw;
+    height: 100vh;
+    /* delete */
+    border: 1px solid red;
+}
