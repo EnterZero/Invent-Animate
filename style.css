@@ -34,6 +34,13 @@ body>header>nav>ul>li>a:hover {
 
 .history {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #1f1f23;
+    text-align: center;
+}
+
+.history>img {
+    height: 25%;
+    margin: 37.5vh 1.5vw;
+    box-shadow: 0 0 10px 5px black;
 }
