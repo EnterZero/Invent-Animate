@@ -32,6 +32,19 @@ body>header>nav>ul>li>a:hover {
 
 /* banner */
 
+/* tour */
+.tour {
+    width: 100%;
+    height: 100vh;
+    background: #1f1f23;
+}
+
+/* media */
+.media {
+    width: 100%;
+    height: 100vh;
+}
+
 .history {
     width: 100%;
     height: 100vh;
@@ -44,3 +57,11 @@ body>header>nav>ul>li>a:hover {
     margin: 37.5vh 1.5vw;
     box-shadow: 0 0 10px 5px black;
 }
+
+/* merch */
+.merch {
+    width: 100%;
+    height: 100vh;
+}
+
+/* footer */
