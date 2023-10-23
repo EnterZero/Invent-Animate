@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* setup */
+body {
+    background-color: #18181b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    color: #efeff1;
+}
+
+/* head */
+header {
+    height: 100vh;
+}
+
+/* menu */
+#navi {
+    background-color: #1f1f23;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navi ul {
+    display: flex;
+    align-items: center;
+}
+
+#navi li {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+#navi a {
+    text-decoration: none;
+    /* font-size: ; */
+    color: #efeff1;
+    /* padding: 3% 9%; */
+}
+
+#navi a:hover {
+    border-bottom: 1px solid #efeff1;
+}
+
+/* main */
+
+/* tour */
+#tour {
+    background-color: #1f1f23;
+    height: 100vh;
+}
+
+/* media */
+#media {
+    height: 100vh;
+}
+
+/* releases */
+#releases {
+    background-color: #1f1f23;
+    height: 100vh;
+}
+
+/* merch */
+#merch {
+    height: 95vh;
+}
+
+/* footer */
+footer {
+    background-color: #1f1f23;
+    height: 5vh;
+}
