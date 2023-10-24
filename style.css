@@ -18,12 +18,15 @@ body {
 /* head */
 header {
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 /* menu */
 #navi {
     background-color: #1f1f23;
-    height: 25%;
+    height: 10%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,9 +45,9 @@ header {
 
 #navi a {
     text-decoration: none;
-    /* font-size: ; */
+    font-size: 1.3em;
     color: #efeff1;
-    /* padding: 3% 9%; */
+    padding: 3% 9%;
 }
 
 #navi a:hover {
