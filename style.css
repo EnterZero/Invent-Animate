@@ -17,18 +17,22 @@ body {
 
 /* head */
 header {
+    background: linear-gradient(90deg, #1f1f23, #1f1f2333, #1f1f23), url("./media/back.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
+
 }
 
 /* menu */
 #navi {
-    background-color: #1f1f23;
-    height: 10%;
+    background-color: #1f1f2370;
+    height: 3%;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -47,7 +51,7 @@ header {
     text-decoration: none;
     font-size: 1.3em;
     color: #efeff1;
-    padding: 3% 9%;
+    padding: 3% 13%;
 }
 
 #navi a:hover {
