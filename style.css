@@ -1,89 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* reset */
 * {
-    padding: 0;
+    /* reset */
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-/* setup */
-body {
-    background-color: #18181b;
+    /* font */
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
     color: #efeff1;
 }
 
-/* head */
+/* home */
 header {
-    background: linear-gradient(90deg, #1f1f23, #1f1f2333, #1f1f23), url("./media/back.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-
-}
-
-/* menu */
-#navi {
-    background-color: #1f1f2370;
-    height: 3%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#navi ul {
-    display: flex;
-    align-items: center;
-}
-
-#navi li {
-    width: 150px;
-    display: inline-block;
-    text-align: center;
-}
-
-#navi a {
-    text-decoration: none;
-    font-size: 1.3em;
-    color: #efeff1;
-    padding: 3% 13%;
-}
-
-#navi a:hover {
-    border-bottom: 1px solid #efeff1;
-}
-
-/* main */
-
-/* tour */
-#tour {
-    background-color: #1f1f23;
+    background: #0e0e10;
     height: 100vh;
 }
 
-/* media */
-#media {
-    height: 100vh;
-}
-
-/* releases */
-#releases {
-    background-color: #1f1f23;
-    height: 100vh;
-}
-
-/* merch */
-#merch {
-    height: 95vh;
-}
-
-/* footer */
-footer {
-    background-color: #1f1f23;
-    height: 5vh;
-}
+/* media queries */
