@@ -13,20 +13,64 @@
 
 /* home */
 header {
-    background: #0e0e10;
-    background-image: linear-gradient(90deg, #1f1f2380, #0e0e10), url("./media/back.jpg");
+    background: #18181b;
+    background-image: linear-gradient(90deg, #1f1f2333, #1f1f23), url("./media/back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
     height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
 }
 
-/* mobile query */
-@media screen and (max-width: 767px) {}
+/* menu */
+#nav {
+    width: 100%;
+}
+
+#menu {
+    background: #1f1f2370;
+    height: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 0.7rem;
+}
 
 /* tablet query */
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #menu {
+        height: 20px;
+    }
+
+    #menu a {
+        font-size: 1rem;
+    }
+}
 
 /* desktop query */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    #menu {
+        height: 25px;
+        justify-content: center;
+    }
+
+    #menu li {
+        width: 150px;
+        text-align: center;
+    }
+
+    #menu a {
+        font-size: 1.3rem;
+    }
+}
