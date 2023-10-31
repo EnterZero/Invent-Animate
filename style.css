@@ -20,7 +20,6 @@ header {
     background-position: center;
     /* background-attachment: fixed; */
     height: 100vh;
-    width: 100vw;
     display: flex;
     align-items: center;
 }
@@ -45,6 +44,12 @@ header {
 #menu a {
     text-decoration: none;
     font-size: 0.7rem;
+}
+
+/* releases */
+#releases {
+    background: #1f1f23;
+    height: 100vh;
 }
 
 /* tablet query */
