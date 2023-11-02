@@ -50,16 +50,67 @@ header {
 #releases {
     background: #1f1f23;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 10px 10px -5px black, inset 0px -10px 10px -5px black;
+}
+
+#cover {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.description img {
+    width: 22.5%;
+    box-shadow: 0 0 10px 3px black;
+}
+
+.description p {
+    width: 100px;
+    text-align: center;
+}
+
+.description button {
+    background: transparent;
+    border: 1px solid #efeff1;
+    padding: 10px;
+    width: 80px;
 }
 
 /* tablet query */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* menu */
     #menu {
         height: 20px;
     }
 
     #menu a {
         font-size: 1rem;
+    }
+
+    /* releases */
+    #cover {
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .description {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .description img {
+        width: 75%;
     }
 }
 
@@ -77,5 +128,20 @@ header {
 
     #menu a {
         font-size: 1.3rem;
+    }
+
+    /* releases */
+    #cover {
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .description {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .description img {
+        width: 75%;
     }
 }
