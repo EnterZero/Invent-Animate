@@ -55,18 +55,32 @@ header {
     padding: 3%;
 }
 
+#tour tr {
+    height: 50px;
+}
+
 #tour tr:nth-child(even) {
     background: #18181b;
 }
 
+#tour th {
+    padding: 0px 6px;
+}
+
 #tour td {
+    padding: 0px 2px;
     text-align: center;
 }
 
 #tour button {
     background: #1f1f23;
     border: 1px solid #efeff180;
+    margin: 0px 6px;
     padding: 2px 6px;
+}
+
+#tour button:hover {
+    border: 1px solid #efeff1;
 }
 
 #tour a {
@@ -79,6 +93,3 @@ header {
         width: 1%;
     }
 }
-
-/* wqhd */
-@media screen and (min-width: 2560px) {}
