@@ -112,16 +112,39 @@ header {
     justify-content: space-evenly;
 }
 
+#art .description {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #art img {
-    width: 25%;
-    box-shadow: 0 0 10px 5px black;
+    width: 40%;
+    box-shadow: 0 0 10px 3px black;
 }
 
 /* ----------------------------- media queries ----------------------------- */
 
-/* tablet < */
+/* tablet */
 @media screen and (min-width: 768px) {
+
+    /* home */
     #home li {
         width: 1%;
+    }
+
+    /* releases */
+    #art {
+        flex-direction: row;
+    }
+
+    #art .description {
+        height: 25%;
+        flex-direction: column;
+    }
+
+    #art img {
+        width: 50%;
     }
 }
