@@ -37,6 +37,11 @@ body {
     text-align: center;
 }
 
+#home li {
+    width: 100px;
+    list-style: none;
+}
+
 /* menu mobile */
 #menu-mobile {
     width: 100%;
@@ -51,7 +56,44 @@ body {
     font-size: 3rem;
 }
 
-#home li {
-    width: 100px;
-    list-style: none;
+/* menu desktop */
+#menu-desktop {
+    width: 100%;
+}
+
+#menu-desktop ul {
+    background:
+        linear-gradient(90deg,
+            var(--colorDarkgrey),
+            var(--colorGrey),
+            var(--colorDarkgrey));
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-desktop a {
+    color: var(--colorWhite);
+    text-decoration: none;
+}
+
+/* ------------- media q ------------- */
+
+/* sd */
+@media screen and (max-width: 767px) {
+
+    /* menu display */
+    #menu-desktop {
+        display: none;
+    }
+}
+
+/* hd */
+@media screen and (min-width: 768px) {
+
+    /* menu display */
+    #menu-mobile {
+        display: none;
+    }
 }
