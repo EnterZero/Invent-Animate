@@ -29,7 +29,7 @@ body {
 /* ------------- home ------------- */
 #home {
     background: var(--colorDarkgrey);
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -77,6 +77,34 @@ body {
     color: var(--colorWhite);
     text-decoration: none;
 }
+
+/* return */
+
+/* ------------- releases ------------- */
+#releases {
+    background: var(--colorGrey);
+    height: 100vh;
+}
+
+/* ------------- tour ------------- */
+#tour {
+    background: var(--colorDarkgrey);
+    height: 100vh;
+}
+
+/* ------------- media ------------- */
+#media {
+    background: var(--colorGrey);
+    height: 100vh;
+}
+
+/* ------------- merch ------------- */
+#merch {
+    background: var(--colorDarkgrey);
+    height: 100vh;
+}
+
+/* ------------- end ------------- */
 
 /* ------------- media q ------------- */
 
