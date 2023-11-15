@@ -79,11 +79,17 @@ body {
 }
 
 /* return */
+.return {
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ------------- releases ------------- */
 #releases {
     background: var(--colorGrey);
-    height: 100vh;
+    height: 97vh;
     display: flex;
     justify-content: center;
     align-items: center;
