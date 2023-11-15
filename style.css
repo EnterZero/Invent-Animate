@@ -84,6 +84,43 @@ body {
 #releases {
     background: var(--colorGrey);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rel-container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rel-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rel-row img {
+    width: 70px;
+    box-shadow: 0 0 3px 3px var(--colorBlack);
+}
+
+.rel-desc {
+    width: 150px;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rel-link {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* ------------- tour ------------- */
