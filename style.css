@@ -141,6 +141,14 @@ main a {
 #tour {
     background: var(--colorDarkgrey);
     height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 95%;
+    height: 95%;
 }
 
 /* ------------- media ------------- */
@@ -152,10 +160,14 @@ main a {
 /* ------------- merch ------------- */
 #merch {
     background: var(--colorDarkgrey);
-    height: 97vh;
+    height: 94vh;
 }
 
 /* ------------- end ------------- */
+footer {
+    background: var(--colorLightgrey);
+    height: 3vh;
+}
 
 /* ------------- media q ------------- */
 
