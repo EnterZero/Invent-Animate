@@ -186,10 +186,34 @@ main a {
     border-bottom: 1px solid var(--colorWhite);
 }
 
+#tour a {
+    font-size: 2rem;
+}
+
 /* ------------- media ------------- */
 #media {
     background: var(--colorGrey);
     height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#media .gallery {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+#media img {
+    width: calc(25% - 10px);
+    height: calc(16.66% - 10px);
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 /* ------------- merch ------------- */
@@ -226,10 +250,7 @@ footer {
     /* home */
     #home {
         background: radial-gradient(circle, var(--colorGrey75), var(--colorDarkgrey)),
-            url("./media/back.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+            url("./media/back.jpg") center/cover no-repeat fixed;
     }
 
     /* releases */
@@ -239,5 +260,21 @@ footer {
 
     .rel-row {
         justify-content: space-around;
+    }
+
+    /* media */
+    #media img {
+        width: calc(20% - 10px);
+        height: calc(20% - 10px);
+    }
+}
+
+/* fhd */
+@media screen and (min-width: 1920px) {
+
+    /* media */
+    #media img {
+        width: calc(20% - 10px);
+        height: auto;
     }
 }
