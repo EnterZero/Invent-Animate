@@ -22,6 +22,8 @@
     --colorGrey50: #1f1f2380;
     --colorLightgrey: #33333a;
     --colorOrange: orange;
+    /* shadow */
+    --basicShadow: 0 0 5px 3px var(--colorBlack);
 }
 
 /* ------------- body ------------- */
@@ -95,6 +97,10 @@ main a {
     align-items: center;
 }
 
+.return i {
+    color: var(--colorWhite)
+}
+
 /* scroll */
 ::-webkit-scrollbar {
     width: 5px;
@@ -109,7 +115,16 @@ main a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--colorWhite);
+    background-color: var(--colorOrange);
+}
+
+/* hover */
+#menu-desktop a:hover,
+.rel-link i:hover,
+#tour i:hover,
+#end i:hover,
+.return i:hover {
+    color: var(--colorOrange);
 }
 
 /* ------------- releases ------------- */
@@ -137,7 +152,11 @@ main a {
 
 .rel-row img {
     height: 90px;
-    box-shadow: 0 0 5px 3px var(--colorBlack);
+    box-shadow: var(--basicShadow);
+}
+
+.rel-row img:hover {
+    transform: scale(1.7);
 }
 
 .rel-desc {
@@ -153,6 +172,10 @@ main a {
     font-size: 2rem;
     display: flex;
     justify-content: space-evenly;
+}
+
+.rel-link i {
+    color: var(--colorWhite);
 }
 
 /* ------------- tour ------------- */
@@ -178,6 +201,14 @@ main a {
     border-bottom: 1px solid var(--colorWhite);
 }
 
+tr:nth-child(even) {
+    background-color: var(--colorDarkgrey);
+}
+
+tr:nth-child(odd) {
+    background: var(--colorGrey75);
+}
+
 #tour td {
     width: 25%;
     height: 100px;
@@ -189,6 +220,10 @@ main a {
 
 #tour a {
     font-size: 2rem;
+}
+
+#tour i {
+    color: var(--colorWhite);
 }
 
 /* ------------- media ------------- */
@@ -217,6 +252,11 @@ main a {
     object-fit: cover;
 }
 
+#media img:hover {
+    transform: scale(1.3);
+    box-shadow: var(--basicShadow);
+}
+
 /* ------------- merch ------------- */
 #merch {
     background: var(--colorDarkgrey);
@@ -239,12 +279,21 @@ main a {
     text-align: center;
 }
 
+.hov1:hover,
+.hov2:hover,
+.hov3:hover,
+.hov4:hover {
+    color: var(--colorOrange);
+    transform: rotate(3deg);
+}
+
 #merch span {
     font-weight: 700;
 }
 
 #merch img {
     width: 25%;
+    box-shadow: var(--basicShadow);
 }
 
 /* ------------- footer ------------- */
@@ -267,10 +316,6 @@ main a {
 
 #end .right a {
     color: var(--colorBlack);
-}
-
-#end a:hover {
-    color: var(--colorOrange);
 }
 
 /* ------------- media q ------------- */
