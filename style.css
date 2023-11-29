@@ -7,6 +7,10 @@
     --colorGrey: #1f1f23;
     --colorLightGrey: #33333a;
     --colorWhite: #efeff1;
+    /* font */
+    font-family: 'Montserrat', sans-serif;
+    color: var(--colorWhite);
+    font-size: 62.5%;
 }
 
 * {
@@ -16,13 +20,9 @@
     box-sizing: border-box;
 }
 
-/* ------- body ------- */
 body {
+    /* default */
     background: var(--colorBlack);
-    /* font */
-    font-family: 'Montserrat', sans-serif;
-    color: var(--colorWhite);
-    font-size: 62.5%;
 }
 
 /* ------- home ------- */
@@ -34,31 +34,89 @@ body {
     align-items: center;
 }
 
-#home ul {
+#home li {
     list-style: none;
 }
 
-#home #menu {
+#home a {
+    color: var(--colorWhite);
+    text-decoration: none;
+}
+
+/* navMobile */
+#navMobile {
     width: 100%;
-    height: 3%;
-    background: var(--colorDarkGrey);
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#home #menu ul {
+#navMobile ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navMobile li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#navMobile li.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#navMobile a {
+    width: 100%;
+    text-align: center;
+}
+
+/* navDesktop */
+#navDesktop {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#home #menu ul li {
+#navDesktop ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navDesktop li {
     width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
-/* ------- responsiv ------- */
+/* ------- responsive ------- */
+
+/* sd */
+@media screen and (max-width: 767px) {
+
+    /* menu toggle */
+    #navDesktop {
+        display: none;
+    }
+}
+
+/* hd */
+@media screen and (min-width: 768px) {
+
+    /* menu toggle */
+    #navMobile {
+        display: none;
+    }
+}
