@@ -5,6 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     liElements.forEach(function (li, index) {
         setTimeout(function () {
             li.classList.add("show");
-        }, index * 750);
+        }, index * 500); // ms
     });
 });
