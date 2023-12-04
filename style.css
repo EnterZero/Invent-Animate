@@ -183,6 +183,17 @@ body {
     transform: scale(1.5);
 }
 
+/* ------- tour ------- */
+#tour {
+    height: 100vh;
+    background: var(--colorDarkGrey);
+}
+
+#tour table {
+    width: 100%;
+    text-align: center;
+}
+
 /* ------- responsive ------- */
 
 /* mobile */
