@@ -203,6 +203,14 @@ body {
     border-collapse: collapse;
 }
 
+#tour thead {
+    background: var(--colorLightGrey);
+}
+
+#tour tr:nth-child(even) {
+    background: var(--colorGrey);
+}
+
 #tour th,
 #tour td {
     padding: 10px;
@@ -223,10 +231,6 @@ body {
     }
 
     /* tour */
-    #tour table {
-        width: 100%;
-    }
-
     #tour thead {
         display: none;
     }
@@ -237,6 +241,11 @@ body {
     #tour td {
         display: block;
         padding: 10px;
+    }
+
+    #tour tr {
+        background: var(--colorGrey);
+        border-bottom: 1px solid var(--colorWhite);
     }
 
     #tour td {
@@ -250,6 +259,7 @@ body {
         color: var(--colorLightGrey);
         font-weight: bold;
     }
+
 }
 
 /* tablet */
@@ -260,7 +270,7 @@ body {
         display: none;
     }
 
-    /* releases - cards */
+    /* releases */
     #releases .card {
         width: 40%;
         height: 40%;
