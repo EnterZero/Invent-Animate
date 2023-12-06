@@ -187,11 +187,29 @@ body {
 #tour {
     height: 100vh;
     background: var(--colorDarkGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tour div {
+    width: 90%;
+    height: 90%;
 }
 
 #tour table {
     width: 100%;
     text-align: center;
+    border-collapse: collapse;
+}
+
+#tour th,
+#tour td {
+    padding: 10px;
+}
+
+#tour i {
+    font-size: 3rem;
 }
 
 /* ------- responsive ------- */
@@ -202,6 +220,35 @@ body {
     /* menu toggle */
     #navDesktop {
         display: none;
+    }
+
+    /* tour */
+    #tour table {
+        width: 100%;
+    }
+
+    #tour thead {
+        display: none;
+    }
+
+    #tour tbody,
+    #tour tr,
+    #tour th,
+    #tour td {
+        display: block;
+        padding: 10px;
+    }
+
+    #tour td {
+        text-align: left;
+    }
+
+    #tour td::before {
+        content: attr(data-label);
+        word-break: break-word;
+        display: block;
+        color: var(--colorLightGrey);
+        font-weight: bold;
     }
 }
 
