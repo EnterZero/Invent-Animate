@@ -190,6 +190,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
 }
 
 #tour div {
@@ -220,6 +221,16 @@ body {
     font-size: 3rem;
 }
 
+#tour i:hover {
+    transform: scale(1.3);
+}
+
+/* ------- media ------- */
+#media {
+    height: 100vh;
+    background: var(--colorDarkGrey);
+}
+
 /* ------- responsive ------- */
 
 /* mobile */
@@ -244,7 +255,6 @@ body {
     }
 
     #tour tr {
-        background: var(--colorGrey);
         border-bottom: 1px solid var(--colorWhite);
     }
 
