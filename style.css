@@ -229,6 +229,23 @@ body {
 #media {
     height: 100vh;
     background: var(--colorDarkGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#media .photo {
+    height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.photo img {
+    width: 100%;
+    box-shadow: var(--shadowBlack);
 }
 
 /* ------- responsive ------- */
@@ -284,5 +301,10 @@ body {
     #releases .card {
         width: 40%;
         height: 40%;
+    }
+
+    /* media */
+    #media .photo {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
