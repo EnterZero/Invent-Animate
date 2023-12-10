@@ -232,20 +232,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: auto;
 }
 
 #media .photo {
     height: 90%;
     width: 90%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
 }
 
 .photo img {
-    width: 100%;
+    width: calc(20% - 5px);
+    height: calc(50% - 5px);
     box-shadow: var(--shadowBlack);
+    object-fit: cover;
 }
 
 /* ------- responsive ------- */
@@ -286,7 +288,6 @@ body {
         color: var(--colorLightGrey);
         font-weight: bold;
     }
-
 }
 
 /* tablet */
@@ -301,10 +302,5 @@ body {
     #releases .card {
         width: 40%;
         height: 40%;
-    }
-
-    /* media */
-    #media .photo {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
