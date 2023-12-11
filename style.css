@@ -240,12 +240,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     gap: 5px;
 }
 
 .photo img {
-    width: calc(20% - 5px);
-    height: calc(50% - 5px);
+    width: calc(25% - 5px);
+    height: calc(33.33% - 5px);
     box-shadow: var(--shadowBlack);
     object-fit: cover;
 }
