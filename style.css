@@ -84,14 +84,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-#navMobile li.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 #navMobile a {
@@ -235,8 +227,8 @@ body {
 }
 
 #media .photo {
-    height: 90%;
     width: 90%;
+    height: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -245,10 +237,25 @@ body {
 }
 
 .photo img {
-    width: calc(25% - 5px);
-    height: calc(33.33% - 5px);
+    width: calc(50% - 5px);
+    height: calc(15% - 5px);
     box-shadow: var(--shadowBlack);
     object-fit: cover;
+}
+
+/* ------- shop ------- */
+#shop {
+    height: 100vh;
+    background: var(--colorDarkGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
 }
 
 /* ------- responsive ------- */
@@ -303,5 +310,11 @@ body {
     #releases .card {
         width: 40%;
         height: 40%;
+    }
+
+    /* media */
+    .photo img {
+        width: calc(25% - 5px);
+        height: calc(33.33% - 5px);
     }
 }
