@@ -47,6 +47,7 @@ body {
 /* ------- home ------- */
 #home {
     height: 100vh;
+    background: var(--colorDarkGrey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +103,7 @@ body {
 #navDesktop ul {
     width: 100%;
     height: 14px;
-    background: linear-gradient(90deg, var(--colorBlack), var(--colorDarkGrey), var(--colorBlack));
+    background: linear-gradient(90deg, var(--colorDarkGrey), var(--colorGrey), var(--colorDarkGrey));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +246,7 @@ body {
 
 /* ------- shop ------- */
 #shop {
-    height: 100vh;
+    height: 95vh;
     background: var(--colorDarkGrey);
     display: flex;
     justify-content: center;
@@ -253,9 +254,83 @@ body {
 }
 
 .rotation {
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: var(--colorGrey);
+}
+
+.next {
+    right: 20%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 20%;
+    border-radius: 3px 0 0 3px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* end */
+footer {
+    height: 5vh;
+    background: var(--colorGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+footer div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .social {
     width: 100px;
-    height: 100px;
-    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* ------- responsive ------- */
@@ -295,6 +370,11 @@ body {
         display: block;
         color: var(--colorLightGrey);
         font-weight: bold;
+    }
+
+    /* shop */
+    #shop img {
+        width: 100%;
     }
 }
 
